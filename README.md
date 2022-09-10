@@ -1,24 +1,33 @@
-# README
+# simple_carrierwave
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Описание
 
-Things you may want to cover:
+Гем [CarrierWave]([GitHub - carrierwaveuploader/carrierwave: Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks](https://github.com/carrierwaveuploader/carrierwave)) предоставляет простой и чрезвычайно гибкий способ загрузки файлов. Он хорошо работает с веб-приложениями на основе Rack, такими как Ruby on Rails. 
 
-* Ruby version
+### Гемы проекта
 
-* System dependencies
+* carrierwave
 
-* Configuration
+* better_errors 
 
-* Database creation
+* simple_form 
 
-* Database initialization
+* bulma-rails 
 
-* How to run the test suite
+* gravatar_image_tag 
 
-* Services (job queues, cache servers, search engines, etc.)
+* mini_magick 
 
-* Deployment instructions
+#### Модель [User]
 
-* ...
+* name:string  
+
+* age:integer 
+
+* email:string  
+
+* image:string   - в случае sqlite 
+
+* 
+
+*  
