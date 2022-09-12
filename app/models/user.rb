@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  
-  validates :name, :email, :age, presence: true 
-  
+  mount_uploader :image, AvatarUploader
+  validates :name, :email, :age, presence: true  
 end

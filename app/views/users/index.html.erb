@@ -1,17 +1,33 @@
 <p style="color: green"><%= notice %></p>
-
-<div class="container mt-5">
-  <div class="content">
-    <h1>Cписок пользователей</h1>
-    <%= link_to "Добавить пользователя", new_user_path %>  
-    <div>
+<section class="section">
+  <div class="container mt-5">
+    <h1 class="title is-3">Cписок пользователей</h1>
+    <%= link_to "Добавить пользователя", new_user_path, class: "button is-primary mb-5" %>  
+    <div class="columns is-multiline">
       <% @users.each do |user| %>
-        <%= render user %>
-        <p>
-        <%= link_to "Подробнее", user %>
-        </p>
+        <div class="column is-4">
+          <div class="box">
+            <div class="media">
+              <figure class="media-left">
+                <p class="image">
+                  <%= link_to image_tag(user.image.thumb.url, alt: 'Image') if user.image? %>
+                </p>
+              </figure>
+              <div class="media-content">
+                <p>
+                  <strong><%= user.name %></strong>
+                  <small> <%= user.email %> </small>
+                  </br>
+                  <p>
+                    Lorem voluptas maiores excepturi molestiae quam quae eius doloribus asperiores Blanditiis accusantium repellendus dolor aliquid unde.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
-</div>
+</section> 
 
